@@ -1,0 +1,17 @@
+{% extends 'RegisterTwo/Layout.html' %}
+{% load static %}
+
+{% block content %}
+<div class="header">
+    <h1>All Parents</h1>
+
+</div>
+<div class="main">
+    {% for Parent in ParentsAllOfEm %}
+    {{Parent}}<br>
+    {% endfor %}
+    
+</div>
+
+
+{% endblock %}

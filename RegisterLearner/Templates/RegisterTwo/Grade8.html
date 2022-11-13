@@ -1,0 +1,25 @@
+{% extends 'RegisterTwo/Layout.html' %}
+{% load static %}
+
+{% block content %}
+<div class="header">
+    <h1>Grade 8 Learners</h1>
+
+</div>
+<div class="main">
+    {% for students in All_Student %}
+    <table>  
+        <tr>
+            <td>
+                <a href="{% url 'StudentDetails' students.id %}">
+                    {{students.Student_name}}
+                    {{students.Student_surname}}<br>
+                </a>
+            </td>
+        </tr>
+    </table>
+    {% endfor %} 
+</div>
+
+
+{% endblock %}

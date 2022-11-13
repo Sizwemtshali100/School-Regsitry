@@ -1,0 +1,18 @@
+{% extends 'RegisterTwo/Layout.html' %}
+{% load static %}
+
+{% block content %}
+<div class="header">
+    <h1>Updating Learner's details</h1>
+
+</div>
+<div class="main">
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{EdittingStudent.as_p}}<br>
+        <input type="submit" value="Updating">
+    </form>
+    
+</div>
+
+{% endblock %}

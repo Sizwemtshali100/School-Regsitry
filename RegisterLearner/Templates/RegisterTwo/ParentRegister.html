@@ -1,0 +1,18 @@
+{% extends 'RegisterTwo/Layout.html' %}
+{% load static %}
+
+{% block content %}
+<div class="header">
+    <h1>Registering Parent</h1>
+
+</div>
+<div class="main">
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{RegisterParent.as_p}}
+        <input type="submit" value="Saving">
+    </form>
+    
+    
+</div>
+{% endblock %}

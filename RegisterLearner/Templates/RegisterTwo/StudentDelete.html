@@ -1,0 +1,13 @@
+{% extends 'RegisterTwo/Layout.html' %}
+{% load static %}
+
+{% block content %}
+<div class="header">
+    <h1>Deleting Student<h1>
+        <a href="{% url 'Home' %}">
+            Cancel<br>
+        </a>
+        <br>
+        <a href="{% url 'Delete' DeletingStudent.id %}">Delete</a>
+
+{% endblock %}

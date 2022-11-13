@@ -1,0 +1,52 @@
+{% extends 'RegisterTwo/Layout.html' %}
+{% load static %}
+
+{% block content %}
+<div class="header">
+    <h1>Learner's Details</h1>
+</div>
+<div class="main">
+    <hr>
+    <td>
+        <a href="{% url 'StudentEdit' DetailsOfLearner.id %}">Edit details</a>
+    </td>
+    <td>
+        <a href="{% url 'StudentDelete' DetailsOfLearner.id %}">Delete</a>
+    </td>
+
+    <hr>
+    <div class="row">
+        <div class="col">
+            {% if DetailsOfLearner.image %}
+            <img src="{{DetailsOfLearner.image.url}}" class="img-thumbnail" alt="Student image" height="100" weight="100">   
+                {% endif %}
+            </div>
+        <div class="col">
+            <div class="card" style="width: 28rem;">
+                <div class="card-header">
+                    {{DetailsOfLearner.Student_Grade}}<br>
+                </div>
+                <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <strong>Name: </strong>{{DetailsOfLearner.Student_name}}
+                </li>
+                <li class="list-group-item">
+                   <strong>Surname: </strong> {{DetailsOfLearner.Student_surname}}
+                </li>
+                <li class="list-group-item">
+                  <strong> Gender: </strong>{{DetailsOfLearner.Student_Gender}}
+                </li>
+                <li class="list-group-item">
+                    <strong>Age: </strong>{{DetailsOfLearner.Student_Age}}
+                </li>
+                <li class="list-group-item">
+                    <strong>Course Subject: </strong>{{DetailsOfLearner.Student_subject}}
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+{% endblock %}

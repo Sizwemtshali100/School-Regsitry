@@ -1,0 +1,23 @@
+{% extends 'RegisterTwo/Layout.html' %}
+{% load static %}
+
+{% block content %}
+<div class="header">
+    <h1>Learner's Details</h1>
+
+</div>
+<div class="main">
+
+    {{DetailsOfLearner.Student_name}}<br>
+    {{DetailsOfLearner.Student_surname}}<br>
+    {{DetailsOfLearner.Student_Gender}}<br>
+    {{DetailsOfLearner.Student_Age}}<br>
+    {{DetailsOfLearner.Student_Grade}}<br>
+    {{DetailsOfLearner.Student_subject}}<br>
+    {{DetailsOfLearner.image}}<br>
+    
+    
+</div>
+
+
+{% endblock %}

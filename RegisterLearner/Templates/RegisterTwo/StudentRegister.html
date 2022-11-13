@@ -1,0 +1,22 @@
+{% extends 'RegisterTwo/Layout.html' %}
+{% load static %}
+
+{% block content %}
+<div class="header">
+    <h1>Register Learner</h1>
+
+</div>
+<div class="main">
+    <br>
+    <div class="form-group">
+        <form action="" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{RegisterLearner.as_p}}
+            <input type="submit" value="Submitting Learner">
+        </form>
+    </div>        
+</div>
+
+
+
+{% endblock %}

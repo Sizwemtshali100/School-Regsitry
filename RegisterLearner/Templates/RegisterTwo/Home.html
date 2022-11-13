@@ -1,0 +1,41 @@
+{% extends 'RegisterTwo/Layout.html' %}
+{% load static %}
+
+{% block content %}
+<div class="header">
+    <h1>Imaginary High School</h1>
+
+</div>
+<div class="main">
+<table class="table table-striped">
+    <tr>        
+<td>
+    <a href="{% url 'Grade8' %}">Grade 8</a><br>
+</td>
+</tr>
+<tr>
+    <td>
+        <a href="{% url 'Grade9' %}">Grade 9</a><br>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href>Grade 10</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href>Grade 11</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href>Grade 12</a>
+    </td>
+</tr>
+    
+</table>
+
+    
+</div>
+{% endblock %}
