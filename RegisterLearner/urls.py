@@ -14,7 +14,6 @@ urlpatterns = [
     path('StudentEdit/<int:pk_EditStudent>', views.StudentEdit, name='StudentEdit'),   
     path('Delete/<int:pk_DeleteStudent>', views.StudentDelete, name='StudentDelete'),   
     path('ParentRegister/', views.ParentRegister, name='ParentRegister'),
-    path('DeleteConfirmed/', views.DeleteConfirmed, name='DeleteConfirmed'),
 
 
 
